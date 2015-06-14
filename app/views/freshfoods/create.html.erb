@@ -1,0 +1,14 @@
+<div style = "background-color: purple">
+<h1 style="color: black">A List of Nearby Farmers' Markets</h1>
+<div><%= link_to 'Back' %></div>
+<div>
+<ul>
+<% @results.each do |market_hash|  %>
+  <% market_hash.each do |name, details_hash|  %>
+      <li><%= name %></li>
+        <% end  %>
+    <% end  %>
+</ul>
+</div>
+
+ 

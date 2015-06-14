@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Findfreshfood</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
+<body>
+  <center class = "centered">
+  <div id="box">
+    <h1 id="text">Find Fresh Food</h1>
+    <br>
+    <br>
+    <%= form_tag do %>
+    <%= text_field_tag "zip_code", nil, placeholder: "Enter your zip code"%>
+    <center id="meow" class="btn btn-primary"><%= submit_tag "Search" %></center>
+    <% end %>
+  </center>
+  </div>
+</body>
+</html>
